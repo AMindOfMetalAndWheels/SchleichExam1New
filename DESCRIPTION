@@ -1,0 +1,21 @@
+Package: SchleichExam1New
+Type: Package
+Title: Sliding window:An algorithm used on sequential data to smoothen it by first adding together series with a high increase and then taking the min value over a certain range.
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: Fabian Schleich <your.email@example.com>
+Description: Here you can generate euclidean norm. Use a sliding window on your data to generate more "averaged" data. And plot it. Have fun!
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Authors@R: person("Fabian", "Schleich", email = "fabian.schleich@ki.se", role = c("cre", "aut"))
+URL: https://github.com/AMindOfMetalAndWheels/SchleichExam1Slide
+BugReports: https://github.com/AMindOfMetalAndWheels/SchleichExam1Slide/issues
+Imports: 
+    ggplot2,
+    utils
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
