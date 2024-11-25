@@ -2,7 +2,7 @@ library(utils)
 library(ggplot2)
 library(testthat)
 library(SchleichExam1New)
-
+?euclidean
 test_check("SchleichExam1New")
 
 # Load data
