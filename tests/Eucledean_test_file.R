@@ -1,12 +1,10 @@
 library(utils)
 library(ggplot2)
 library(testthat)
-library(SchleichExam1New)
-?euclidean
-test_check("SchleichExam1New")
+library(SchleichExam1Slide)
 
 # Load data
-my_data <- utils::read.csv('SchleichExam1New/inst/extdata/Example_window.csv')
+my_data <- utils::read.csv('inst/extdata/Example_window.csv')
 
 # change column name X to Index
 names(my_data)[1]<-paste("Index")
@@ -34,3 +32,4 @@ SchleichExam1Slide::process_euclidean_data(my_data, window_size = 100)
 my_ggplot_test <- SchleichExam1Slide::process_euclidean_data(my_data, window_size = 1000)
 # plot combination function
 SchleichExam1Slide::plot_euclidean_results(my_ggplot_test,include_mean = TRUE, include_binary = FALSE)
+
